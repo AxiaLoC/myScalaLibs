@@ -1,24 +1,14 @@
 package PopuliUtil
 
-class historyData {
+import java.time.{LocalDate, LocalDateTime}
 
-  val DATE_POS = 0
-  val OPEN_POS = 1
-  val HIGH_POS = 2
-  val LOW_POS = 3
-  val CLOSE_POS = 4
-  val VOLUME_POS = 5
+class historyData (idata:LocalDateTime, iopen:Double, ihigh:Double, ilow:Double, iclose:Double, ivolume:Double) {
 
-  var  myDataList = List[List[String]]()
+  var data = idata
+  var open = iopen
+  var high = ihigh
+  var low = ilow
+  var close = iclose
+  var volume= ivolume
 
-  def insertOneRecord(inputListData: List[String]): Unit = {
-    var appoList = List[String]()
-    appoList = appoList:::List(inputListData(DATE_POS))
-    appoList = appoList:::List(inputListData(OPEN_POS))
-    appoList = appoList:::List(inputListData(HIGH_POS))
-    appoList = appoList:::List(inputListData(LOW_POS))
-    appoList = appoList:::List(inputListData(CLOSE_POS))
-    appoList = appoList:::List(inputListData(VOLUME_POS))
-    myDataList = myDataList:::List(appoList)
-  }
 }

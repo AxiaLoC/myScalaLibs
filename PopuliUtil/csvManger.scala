@@ -24,4 +24,6 @@ class csvManger(inputFilePathName : String)  extends gestoreInOut(inputFilePathN
 
     writeOnFile(myLine,append)
   }
+
+
 }
