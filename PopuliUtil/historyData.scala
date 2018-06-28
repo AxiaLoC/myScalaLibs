@@ -1,14 +1,14 @@
-package PopuliUtil
+package myScalaLibs.PopuliUtil
 
-import java.time.{LocalDate, LocalDateTime}
+import java.time.LocalDateTime
 
-class historyData (idata:LocalDateTime, iopen:Double, ihigh:Double, ilow:Double, iclose:Double, ivolume:Double) {
+class historyData (idata:LocalDateTime, iopen:Double, ihigh:Double, ilow:Double, iclose:Double, ivolume:Double, itf:String) {
 
-  var data = idata
-  var open = iopen
-  var high = ihigh
-  var low = ilow
-  var close = iclose
-  var volume= ivolume
-
+  var data:LocalDateTime = idata
+  var open:Double = iopen
+  var high:Double = ihigh
+  var low:Double = ilow
+  var close:Double = iclose
+  var volume:Double = ivolume
+  var tf:String = itf
 }

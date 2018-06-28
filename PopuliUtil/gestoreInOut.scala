@@ -1,5 +1,5 @@
 
-package PopuliUtil
+package myScalaLibs.PopuliUtil
 
 class gestoreInOut(inputFilePathName : String) {
 

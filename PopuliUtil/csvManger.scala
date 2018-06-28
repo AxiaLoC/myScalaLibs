@@ -1,4 +1,4 @@
-package PopuliUtil
+package myScalaLibs.PopuliUtil
 
 class csvManger(inputFilePathName : String)  extends gestoreInOut(inputFilePathName : String) {
 
@@ -17,7 +17,9 @@ class csvManger(inputFilePathName : String)  extends gestoreInOut(inputFilePathN
   def writeLine(myList: List[String], append: Boolean = false): Unit = {
 
     var myLine = ""
-    for (n <- 0.until(myList.length)) {
+    //for (n <- 0.until(myList.length)) {
+    for (n <- myList.indices) {
+
       myLine += myList(n)
       if (n < myList.length - 1) myLine += ','
     }
