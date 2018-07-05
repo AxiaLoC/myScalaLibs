@@ -6,6 +6,8 @@ class gestoreInOut(inputFilePathName : String) {
 
   private var myFilePathName = inputFilePathName
 
+  def getMyFilePathName():String=myFilePathName
+
   def initGestore(pathAndName: String): Unit =
   {
     myFilePathName = pathAndName
